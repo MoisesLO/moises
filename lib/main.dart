@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Moises Web oscco',
       theme: ThemeData.dark(),
       home: MyHomePage(),
@@ -26,7 +27,7 @@ class MyHomePage extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.bottomLeft,
             end: Alignment.topRight,
-            colors: [Color(0xF00BCD4), Color(0xFF1E88E5)]
+            colors: [Color(0xFF00BCD4), Color(0xFF1E88E5)]
           )
         ),
         child: Column(

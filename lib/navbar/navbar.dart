@@ -39,8 +39,15 @@ Widget _logoJPD(){
   return Container(
     child: Row(
       children: [
-        Image.asset('logo.jpg', width: 80, height: 80,),
-        Text('Subtitulo', style: TextStyle(color: Colors.white, fontSize: 32),)
+        Container(
+          width: 80, height: 80,
+          decoration: BoxDecoration(
+            color: Colors.transparent,
+            shape: BoxShape.circle,
+            image: DecorationImage(image: AssetImage('logo.png'))
+          ),
+        ),
+        Text('Lineysoft', style: TextStyle(color: Colors.white, fontSize: 32),)
       ],
     ),
   );
@@ -51,15 +58,19 @@ Widget _menuNavbar(){
     child: Row(
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4.0),
+          padding: const EdgeInsets.symmetric(horizontal: 6.0),
+          child: Text('Inicio', style: TextStyle(color: Colors.white)),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6.0),
           child: Text('Nosotros', style: TextStyle(color: Colors.white)),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4.0),
+          padding: const EdgeInsets.symmetric(horizontal: 6.0),
           child: Text('Portafolio', style: TextStyle(color: Colors.white)),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4.0),
+          padding: const EdgeInsets.symmetric(horizontal: 6.0),
           child: Text('Contactanos', style: TextStyle(color: Colors.white)),
         ),
       ],
