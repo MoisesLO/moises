@@ -13,8 +13,9 @@ class MyLogo extends StatelessWidget {
           height: 64,
         ),
         Text(
-          'Logo',
+          'Lineysoft.com',
           style: TextStyle(
+            fontSize: 18,
               color: mTextPrimaryColor,
               fontWeight: FontWeight.bold
           ),
